@@ -43,7 +43,7 @@ Backup & restore details
 - `function_one` (named `tf-ps-backup`) will enumerate all SSM Parameter Store parameters and store a JSON backup into the S3 bucket created by Terraform. The backup file key will be `ssm-backup-<request-id>.json`.
  - `parameter_store_backup` (named `parameter_store_backup`) will enumerate all SSM Parameter Store parameters and store a JSON backup into the S3 bucket created by Terraform. The backup file key will be `ssm-backup-<request-id>.json`.
  - `parameter_store_restore` (named `parameter_store_restore`) restores parameters from a specified S3 object. Provide `{ "bucket": "...", "key": "ssm-backup-...json" }` as the event body if invoking manually.
-- An EventBridge rule triggers the backup lambda every Friday at 00:00 UTC.
+- An EventBridge rule triggers the backup lambda every Friday at 8 PM Sydney time.
 
 Permissions
 
