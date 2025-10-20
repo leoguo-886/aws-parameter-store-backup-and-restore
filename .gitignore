@@ -1,0 +1,31 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+terraform.tfvars
+*.tfvars
+
+# Build artifacts
+build/
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# AWS credentials
+aws_credentials
+aws_config
+
+# Logs
+*.log
